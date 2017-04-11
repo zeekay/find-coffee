@@ -1,8 +1,8 @@
 use 'sake-bundle'
 use 'sake-outdated'
 use 'sake-publish'
-use 'sake-version'
 use 'sake-test'
+use 'sake-version'
 
 task 'clean', 'clean project', ->
   exec 'rm -rf lib'
