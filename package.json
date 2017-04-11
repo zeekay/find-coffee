@@ -1,0 +1,42 @@
+{
+  "name": "find-coffee",
+  "version": "0.1.0",
+  "description": "Helper to find locally installed copies of CoffeeScript",
+  "homepage": "http://github.com/zeekay/find-coffee",
+  "bugs": "http://github.com/zeekay/find-coffee/issues",
+  "keywords": [
+    "coffee",
+    "coffeescript",
+    "coffee-script"
+  ],
+  "main": "lib/find-coffee.js",
+  "module": "lib/find-coffee.mjs",
+  "files": [
+    "lib/",
+    "src/"
+  ],
+  "engines": {
+    "node": ">=4.0.0"
+  },
+  "scripts": {
+    "build": "sake build",
+    "pretest": "sake build",
+    "prepublishOnly": "sake build",
+    "test": "sake test"
+  },
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "http://github.com/zeekay/find-coffee"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "sake-bundle": "0.4.11",
+    "sake-cli": "0.3.2",
+    "sake-core": "1.3.7",
+    "sake-outdated": "0.1.18",
+    "sake-publish": "0.1.11",
+    "sake-test": "0.1.4",
+    "sake-version": "0.1.16"
+  }
+}
