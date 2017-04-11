@@ -1,5 +1,7 @@
 # find-coffee
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/zeekay/find-coffee.svg)](https://greenkeeper.io/)
+
 [![npm][npm-img]][npm-url]
 [![build][build-img]][build-url]
 [![dependencies][dependencies-img]][dependencies-url]
