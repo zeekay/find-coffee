@@ -1,12 +1,15 @@
-version = (coffee) ->
-  parseInt (coffee.VERSION.split '.')[0], 10
+path = require 'path'
+
+version = (coffeePath) ->
+  pkg = require(path.resolve(coffeePath, '../../../package.json'))
+  parseInt (pkg.version.split '.')[0], 10
 
 # Resolve specific version of CoffeeScript
 resolveCoffee = (wanted) ->
   for pkg in ['coffeescript', 'coffee-script']
     try
-      coffee = require.resolve pkg
-      return coffee if (version coffee) == wanted
+      coffeePath = require.resolve pkg
+      return coffeePath if (version coffeePath) == wanted
     catch err
   throw new Error 'Unable to find CoffeeScript matching version ' + wanted
 
@@ -18,9 +21,9 @@ export default findCoffee = (wanted, lazy=false) ->
     catch err
       return findCoffee 1, lazy
 
-  pkg = resolveCoffee wanted
+  pkgPath = resolveCoffee wanted
 
   if lazy
-    pkg
+    pkgPath
   else
-    require pkg
+    require pkgPath
