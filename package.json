@@ -31,10 +31,10 @@
   },
   "dependencies": {},
   "devDependencies": {
-    "sake-bundle": "0.5.2",
-    "sake-cli": "0.5.6",
-    "sake-core": "1.4.6",
-    "sake-outdated": "0.1.27",
+    "sake-bundle": "0.6.1",
+    "sake-cli": "0.5.22",
+    "sake-core": "1.5.1",
+    "sake-outdated": "0.1.28",
     "sake-publish": "0.1.16",
     "sake-test": "0.1.5",
     "sake-version": "0.1.19"
