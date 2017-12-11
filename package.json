@@ -29,8 +29,11 @@
     "type": "git",
     "url": "http://github.com/zeekay/find-coffee"
   },
-  "dependencies": {},
+  "dependencies": {
+    "coffee-script": "^1.12.7"
+  },
   "devDependencies": {
+    "coffeescript": "^2.1.0",
     "sake-bundle": "0.6.1",
     "sake-cli": "0.5.22",
     "sake-core": "1.5.1",
