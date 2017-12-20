@@ -1,6 +1,6 @@
 {
   "name": "find-coffee",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "description": "Helper to find locally installed copies of CoffeeScript",
   "homepage": "http://github.com/zeekay/find-coffee",
   "bugs": "http://github.com/zeekay/find-coffee/issues",
