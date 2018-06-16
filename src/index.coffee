@@ -8,11 +8,7 @@ version = (coffeePath) ->
 
 # Resolve specific version of coffee, matching either package name
 resolveCoffee = (wanted) ->
-  pkgs = [
-    'coffeescript'
-    'coffee-script'
-    '@zeekay/coffee-script'
-  ]
+  pkgs = ['coffeescript', 'coffee-script']
 
   for pkg in pkgs
     try
