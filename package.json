@@ -10,7 +10,7 @@
     "coffee-script"
   ],
   "main": "lib/find-coffee.js",
-  "module": "lib/find-coffee.mjs",
+  "module": "lib/find-coffee.es.js",
   "files": [
     "lib/",
     "src/"
