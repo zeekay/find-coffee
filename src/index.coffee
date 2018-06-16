@@ -8,7 +8,14 @@ version = (coffeePath) ->
 
 # Resolve specific version of coffee, matching either package name
 resolveCoffee = (wanted) ->
-  for pkg in ['coffeescript', 'coffee-script']
+  pkgs = '''
+    coffeescript
+    coffee-script
+    @zeekay/coffeescript
+    @zeekay/coffee-script
+    '''.trim().split '\n'
+
+  for pkg in pkgs
     try
       coffeePath = require.resolve pkg
       return coffeePath if (version coffeePath) == wanted
