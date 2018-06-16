@@ -30,7 +30,6 @@
     "url": "http://github.com/zeekay/find-coffee"
   },
   "devDependencies": {
-    "@zeekay/coffee-script": "^1.12.8",
     "coffee-script": "^1.12.7",
     "coffeescript": "^2.3.1",
     "es-is": "^3.3.10",
